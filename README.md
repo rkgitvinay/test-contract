@@ -1,5 +1,3 @@
-//here this is my code 
-
 pragma solidity ^0.4.18;
    
   contract ERC20Interface {
@@ -24,7 +22,7 @@ pragma solidity ^0.4.18;
       event Approval(address indexed _owner, address indexed _spender, uint256 _value);
   }
    
- contract ZamphyToken is ERC20Interface {
+ contract TestToken is ERC20Interface {
       string public constant symbol = "TEST";
       string public constant name = "TEST Token";
       uint8 public constant decimals = 8;
@@ -51,7 +49,7 @@ pragma solidity ^0.4.18;
         _;
       }
       
-      function ZamphyToken() {
+      function TestToken() {
         owner = msg.sender;
         balances[owner] = _totalSupply;
       }
